@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
   # post '/signup', to: 'static_pages#signup'
   # post '/login', to: 'static_pages#login'
-  
+  resources :users
 
   root 'static_pages#home'
 end
