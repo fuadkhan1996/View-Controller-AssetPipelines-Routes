@@ -9,9 +9,7 @@ class UserSignupTest < ActionDispatch::IntegrationTest
                                          password: "foo",
                                          password_confirmation: "bar" } }
     end
-    follow_redirect!
     assert_template 'users/new'
-    assert_not flash.FILL_IN
   end
   # test "the truth" do
   #   assert true
